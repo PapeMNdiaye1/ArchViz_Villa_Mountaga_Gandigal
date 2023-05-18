@@ -32,10 +32,10 @@ de haut standing" />
     <a class="link_to_archviz" href="https://archviz.netlify.app/" target="_blank">
     </a>
 
-    <div class="the_info">
+    <!-- <div class="the_info">
         <ion-icon name="alert-outline"></ion-icon>
         <ion-icon name="close-outline"></ion-icon>
-    </div>
+    </div> -->
 
 
     <div class="the_blach_hover">
@@ -63,6 +63,8 @@ de haut standing" />
             <img id="Scene-3" src="./Style/Images/Scene-3.jpg">
             <img id="Scene-4" src="./Style/Images/Scene-4.jpg">
             <img id="Scene-5" src="./Style/Images/Scene-5.jpg">
+            <img id="Scene-6" src="./Style/Images/Scene-6.jpg">
+            <img id="Scene-7" src="./Style/Images/Scene-7.jpg">
 
 
         </a-assets>
@@ -115,6 +117,12 @@ de haut standing" />
                 material="src: #Arrow-1; transparent:true"
                 the_dote="Name_of_dote: Dote-4  ; Group_to_activate: Group-4 ; The_rotation: 0">
             </a-plane>
+            <a-plane data-clickable class="pintings clickable" position="-5.89023 -0.88287 4.09302"
+                rotation="-74.63978492948748 87.51185475489656 4.418650516048908"
+                material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-6  ; Group_to_activate: Group-6 ; The_rotation: 0">
+            </a-plane>
+
 
 
 
@@ -135,6 +143,12 @@ de haut standing" />
                 material="src: #Arrow-1; transparent:true"
                 the_dote="Name_of_dote: Dote-1  ; Group_to_activate: Group-1 ; The_rotation: 0">
             </a-plane>
+            <a-plane data-clickable class="pintings clickable" position="-5.02227 -0.39239 -0.5516"
+                rotation="-79.783800014172 124.24016829616771 169.78974005127301"
+                material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-6  ; Group_to_activate: Group-6 ; The_rotation: 0">
+            </a-plane>
+
 
 
 
@@ -168,15 +182,19 @@ de haut standing" />
                 the_dote="Name_of_dote: Dote-1 ; Group_to_activate: Group-1 ; The_rotation:  0">
             </a-plane>
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="0.28693 -0.67352 5.0987" rotation="-88.26128355092767 -162.2461777205806 -110.76190912351022"
+                the_dote="Name_of_dote: Dote-6 ; Group_to_activate: Group-6 ; The_rotation:  0">
+            </a-plane>
+
         </a-entity>
         <!-- ############################################################ -->
         <!-- Group-5 -->
         <a-entity scale="0 0 0" class="groups" id="Group-5" visible="false">
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
-                position="-4.24854 -0.67352 -0.10159"
-                rotation="-76.76603130721796 97.25271022991568 -10.062284798087518"
-                the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation:  0">
+                position="0.65318 -0.67352 4.18281" rotation="-88.27789932698646 -164.0807885805895 -108.92615234791106"
+                the_dote="Name_of_dote: Dote-7 ; Group_to_activate: Group-7 ; The_rotation:  0">
             </a-plane>
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
@@ -184,6 +202,32 @@ de haut standing" />
                 the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation:  0">
             </a-plane>
 
+
+        </a-entity>
+        <!-- Group-6 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-6" visible="false">
+
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="3.54594 -0.67352 -0.10159"
+                rotation="-76.71732989463183 -97.22635417133965 -175.96507916719304"
+                the_dote="Name_of_dote: Dote-2 ; Group_to_activate: Group-2 ; The_rotation:  0">
+            </a-plane>
+
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="0.10084 -0.67352 -4.31935" rotation="-88.3437894734265 179.43548453230045 -92.43470813066057"
+                the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation:  0">
+            </a-plane>
+
+
+        </a-entity>
+
+        <!-- Group-7 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-7" visible="false">
+
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-1.10512 -0.67352 -4.34738" rotation="-85.73282080101535 112.85778873809878 -25.8008624725361"
+                the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation:  0">
+            </a-plane>
 
         </a-entity>
 
@@ -201,15 +245,15 @@ de haut standing" />
         let the_cursor = document.querySelector('.a-mouse-cursor-hover')
         let theBlachHover = document.querySelector('.the_blach_hover')
 
-        theInfo.addEventListener('click', () => {
-            if (theInfo.classList.length === 1) {
-                theInfo.classList.add("the_info_active")
-                theDescription.style.bottom = '8%';
-            } else {
-                theDescription.style.bottom = '';
-                theInfo.classList.remove("the_info_active")
-            }
-        })
+        // theInfo.addEventListener('click', () => {
+        //     if (theInfo.classList.length === 1) {
+        //         theInfo.classList.add("the_info_active")
+        //         theDescription.style.bottom = '8%';
+        //     } else {
+        //         theDescription.style.bottom = '';
+        //         theInfo.classList.remove("the_info_active")
+        //     }
+        // })
 
         AFRAME.registerComponent('the_dote', {
             schema: { Name_of_dote: { type: 'string', default: '#Name', }, Group_to_activate: { type: 'string', default: '#Position', }, The_rotation: { type: 'string', default: '0', } },
